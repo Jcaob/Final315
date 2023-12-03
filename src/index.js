@@ -65,7 +65,7 @@ function logout() {
 }
 
 // Update the URLs to use your new server
-const productsUrl = "../data/data.json";
+const productsUrl = "./data/data.json";
 // Function to fetch and display products
 function displayProducts() {
   // Use jQuery's AJAX function to fetch the JSON data
