@@ -1,0 +1,107 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .banner {
+    height: 250px;
+    width: 1280px;
+    background-image: url(../assets/images/joy23.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Style for the coffee cards */
+  .coffee-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+    width: calc(
+      25% - 20px
+    ); /* 25% width for each card with margin and border included */
+    box-sizing: border-box;
+
+    .add-to-cart {
+      width: 100px;
+      height: 25px;
+      border-radius: 15px;
+      border: none;
+      background-color: rgb(71, 48, 54);
+      color: white;
+      transition: 0.5s;
+    }
+
+    .add-to-cart:hover {
+      background-color: rgb(31, 20, 23);
+      width: 110px;
+      height: 25px;
+      transition: 0.5s;
+    }
+  }
+
+  /* Clearfix to create a new row after every 4 cards */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .body-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1280px;
+  }
+
+  .sort {
+    margin-left: 250px;
+    margin-top: 20px;
+
+    p {
+      position: absolute;
+      top: 540px;
+    }
+
+    div {
+      font-weight: bolder;
+      display: flex;
+      width: 350px;
+      .arrow {
+        background-image: url(../assets/images/ArrowDown.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .body-box {
+    padding: 15px;
+
+    border: 2px solid gray;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow {
+      background-image: url(../assets/images/ArrowDown.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 20px;
+      width: 20px;
+      margin-left: 15px;
+    }
+  }
+}

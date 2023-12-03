@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_image": "../assets/images/Coffee.png",
+      "product_name": "BrewMaster Pro",
+      "product_price": 19.99
+    },
+    {
+      "id": 2,
+      "product_image": "../assets/images/Coffee10.png",
+      "product_name": "JavaJoy Elite",
+      "product_price": 29.99
+    },
+    {
+      "id": 3,
+      "product_image": "../assets/images/Coffee2.png",
+      "product_name": "BeanBlitz Deluxe",
+      "product_price": 39.99
+    },
+    {
+      "id": 4,
+      "product_image": "../assets/images/Coffee3.png",
+      "product_name": "EspressoCraft Supreme",
+      "product_price": 60.88
+    },
+    {
+      "id": 5,
+      "product_image": "../assets/images/Coffee4.png",
+      "product_name": "RoastRise Precision",
+      "product_price": 80.99
+    },
+    {
+      "id": 6,
+      "product_image": "../assets/images/Coffee5.png",
+      "product_name": "CaffeineCommander 2000",
+      "product_price": 50.99
+    },
+    {
+      "id": 7,
+      "product_image": "../assets/images/Coffee6.png",
+      "product_name": "GrindGuru Precision",
+      "product_price": 89.99
+    },
+    {
+      "id": 8,
+      "product_image": "../assets/images/Coffee7.png",
+      "product_name": "MorningMagic Elixir",
+      "product_price": 99.99
+    },
+    {
+      "id": 9,
+      "product_image": "../assets/images/Coffee8.png",
+      "product_name": "CupCraft Prodigy",
+      "product_price": 79.99
+    },
+    {
+      "id": 10,
+      "product_image": "../assets/images/Coffee9.png",
+      "product_name": "SteamSculpt Elegance",
+      "product_price": 49.99
+    }
+  ]
+}

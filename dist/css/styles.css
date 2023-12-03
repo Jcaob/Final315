@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 240px;
+  background-color: rgb(236, 233, 228);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+}
+.nav-row .banner {
+  display: none;
+  padding: 20px;
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+.nav-row .close {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-row .close:hover,
+.nav-row .close:focus {
+  color: black;
+  text-decoration: none;
+}
+.nav-row #support-icon {
+  background-image: url(../assets/images/Support.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-row #account-icon {
+  background-image: url(../assets/images/Account.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-row #cart-icon {
+  background-image: url(../assets/images/Cart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-row #cart-counter {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 5px;
+}
+.nav-row .logo {
+  height: 60px;
+  width: 175px;
+  background-image: url(../assets/images/keurig-vector-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 50px;
+}
+.nav-row .search {
+  margin-left: 150px;
+  width: 604px;
+  height: 44px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.nav-row .search #spyglass {
+  height: 25px;
+  width: 25px;
+  background-image: url(../assets/images/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20px;
+}
+.nav-row .search #search-text {
+  font-family: SegNorm;
+  color: #424141;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.nav-row .free-s {
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 25px;
+}
+.nav-row .icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.nav-row .icon p {
+  margin-top: 45px;
+}
+
+.nav-row-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+  height: 75px;
+}
+.nav-row-bottom .link {
+  margin-left: 70px;
+}
+
+.nav-offers {
+  height: 90px;
+  background-color: rgb(71, 48, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-offers .offer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 400px;
+}
+.nav-offers span {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+
+.footer-container {
+  width: 1280px;
+  height: 500px;
+}
+.footer-container .footer-bar {
+  background-color: rgb(71, 48, 54);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer-bar #one {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.footer-container .footer-bar #one p {
+  margin-left: 5px;
+}
+.footer-container .footer-bar #one #dot {
+  font-weight: bolder;
+}
+.footer-container .footer-bar #two {
+  margin-right: 50px;
+  display: flex;
+}
+.footer-container .footer-bar #two #twitter {
+  background-image: url(../assets/images/icons8-twitter-60.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container .footer-bar #two #fb {
+  background-image: url(../assets/images/icons8-facebook-60.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container .footer-bar #two #insta {
+  background-image: url(../assets/images/icons8-instagram-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container .footer-bar div {
+  color: white;
+}
+.footer-container .footer-bar div span {
+  font-size: 50px;
+}
+.footer-container .footer-bar div .icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+}
+.footer-container .footer-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-container .footer-cc p {
+  font-size: small;
+  color: gray;
+}
+.footer-container .footer-t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-container .footer-t p {
+  font-size: small;
+  color: gray;
+}
+.footer-container .footer-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.footer-container .footer-info h1 {
+  font-size: 25px;
+}
+.footer-container .footer-info .footer-col-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.footer-container .footer-info .footer-col-1 .shop {
+  margin-top: 10px;
+}
+.footer-container .footer-info .footer-col-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.footer-container .footer-info .footer-col-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.footer-container .footer-info .footer-col-4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* Style for the coffee cards */
+  /* Clearfix to create a new row after every 4 cards */
+}
+section .banner {
+  height: 250px;
+  width: 1280px;
+  background-image: url(../assets/images/joy23.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .coffee-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  float: left;
+  width: calc(25% - 20px); /* 25% width for each card with margin and border included */
+  box-sizing: border-box;
+}
+section .coffee-card .add-to-cart {
+  width: 100px;
+  height: 25px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(71, 48, 54);
+  color: white;
+  transition: 0.5s;
+}
+section .coffee-card .add-to-cart:hover {
+  background-color: rgb(31, 20, 23);
+  width: 110px;
+  height: 25px;
+  transition: 0.5s;
+}
+section .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+section .body-banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1280px;
+}
+section .sort {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+section .sort p {
+  position: absolute;
+  top: 540px;
+}
+section .sort div {
+  font-weight: bolder;
+  display: flex;
+  width: 350px;
+}
+section .sort div .arrow {
+  background-image: url(../assets/images/ArrowDown.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+section .body-box {
+  padding: 15px;
+  border: 2px solid gray;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .body-box .arrow {
+  background-image: url(../assets/images/ArrowDown.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

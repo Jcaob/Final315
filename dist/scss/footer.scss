@@ -1,0 +1,136 @@
+.footer-container {
+  width: 1280px;
+  height: 500px;
+
+  .footer-bar {
+    background-color: rgb(71, 48, 54);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #one {
+      margin-left: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      p {
+        margin-left: 5px;
+      }
+
+      #dot {
+        font-weight: bolder;
+      }
+    }
+
+    #two {
+      margin-right: 50px;
+      display: flex;
+
+      #twitter {
+        background-image: url(../assets/images/icons8-twitter-60.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #fb {
+        background-image: url(../assets/images/icons8-facebook-60.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #insta {
+        background-image: url(../assets/images/icons8-instagram-50.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    div {
+      color: white;
+
+      span {
+        font-size: 50px;
+      }
+
+      .icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .footer-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    p {
+      font-size: small;
+      color: gray;
+    }
+  }
+
+  .footer-t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    p {
+      font-size: small;
+      color: gray;
+    }
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+    h1 {
+      font-size: 25px;
+    }
+    .footer-col-1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+
+      .shop {
+        margin-top: 10px;
+      }
+    }
+
+    .footer-col-2 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .footer-col-3 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .footer-col-4 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-right: 20px;
+      width: 300px;
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,157 @@
+nav {
+  height: 240px;
+  background-color: rgb(236, 233, 228);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+
+  .banner {
+    display: none;
+    padding: 20px;
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  #support-icon {
+    background-image: url(../assets/images/Support.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #account-icon {
+    background-image: url(../assets/images/Account.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #cart-icon {
+    background-image: url(../assets/images/Cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #cart-counter {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 5px;
+  }
+
+  .logo {
+    height: 60px;
+    width: 175px;
+
+    background-image: url(../assets/images/keurig-vector-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+  }
+
+  .search {
+    margin-left: 150px;
+    width: 604px;
+    height: 44px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    #spyglass {
+      height: 25px;
+      width: 25px;
+      background-image: url(../assets/images/search.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 20px;
+    }
+    #search-text {
+      font-family: SegNorm;
+      color: #424141;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+
+  .free-s {
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 25px;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    p {
+      margin-top: 45px;
+    }
+  }
+}
+
+.nav-row-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+  height: 75px;
+
+  .link {
+    margin-left: 70px;
+  }
+}
+
+.nav-offers {
+  height: 90px;
+  background-color: rgb(71, 48, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .offer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 400px;
+  }
+
+  span {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 12px;
+  }
+}
